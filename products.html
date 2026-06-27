@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RLS Products</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#f4f4f4;
+}
+
+header{
+background:#0d6efd;
+color:#fff;
+text-align:center;
+padding:20px;
+}
+
+nav{
+background:#fff;
+padding:15px;
+text-align:center;
+box-shadow:0 2px 8px rgba(0,0,0,.1);
+}
+
+nav a{
+text-decoration:none;
+color:#333;
+font-weight:bold;
+margin:0 10px;
+}
+
+.container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+padding:30px;
+}
+
+.card{
+background:#fff;
+padding:15px;
+border-radius:10px;
+text-align:center;
+box-shadow:0 2px 8px rgba(0,0,0,.1);
+}
+
+.card img{
+width:100%;
+height:180px;
+object-fit:cover;
+border-radius:10px;
+}
+
+.price{
+color:green;
+font-weight:bold;
+margin:10px 0;
+}
+
+.btn{
+display:inline-block;
+padding:10px 15px;
+background:#28a745;
+color:#fff;
+text-decoration:none;
+border-radius:6px;
+font-weight:bold;
+}
+
+.btn:hover{
+background:#218838;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>🛍️ Our Products</h1>
+<p>Choose your favorite items</p>
+</header>
+
+<!-- Navigation -->
+<nav>
+<a href="index.html">🏠 Home</a>
+<a href="products.html">🛒 Products</a>
+<a href="search.html">🔍 Search</a>
+<a href="about.html">ℹ️ About</a>
+<a href="contact.html">📞 Contact</a>
+</nav>
+
+<section class="container">
+
+<div class="card">
+<img src="https://via.placeholder.com/300x200">
+<h3>Stylish Dress</h3>
+<p class="price">1050 BDT</p>
+<a href="https://wa.me/8801978196025" class="btn" target="_blank">Order on WhatsApp</a>
+</div>
+
+<div class="card">
+<img src="https://via.placeholder.com/300x200">
+<h3>Premium Shirt</h3>
+<p class="price">650 BDT</p>
+<a href="https://wa.me/8801978196025" class="btn" target="_blank">Order on WhatsApp</a>
+</div>
+
+<div class="card">
+<img src="https://via.placeholder.com/300x200">
+<h3>Fashion Bag</h3>
+<p class="price">850 BDT</p>
+<a href="https://wa.me/8801978196025" class="btn" target="_blank">Order on WhatsApp</a>
+</div>
+
+<div class="card">
+<img src="https://via.placeholder.com/300x200">
+<h3>Stylish Watch</h3>
+<p class="price">1200 BDT</p>
+<a href="https://wa.me/8801978196025" class="btn" target="_blank">Order on WhatsApp</a>
+</div>
+
+</section>
+
+</body>
+</html>

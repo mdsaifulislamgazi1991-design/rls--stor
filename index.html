@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>RLS - Rup Labonno Style</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#f4f4f4;
+}
+
+/* Header */
+header{
+background:#0d6efd;
+color:#fff;
+text-align:center;
+padding:20px;
+}
+
+/* Navigation */
+nav{
+background:#fff;
+padding:15px;
+display:flex;
+justify-content:center;
+align-items:center;
+gap:10px;
+flex-wrap:wrap;
+box-shadow:0 2px 8px rgba(0,0,0,.1);
+}
+
+nav a{
+text-decoration:none;
+color:#333;
+font-weight:bold;
+}
+
+nav input{
+padding:8px;
+border:1px solid #ccc;
+border-radius:5px;
+width:180px;
+}
+
+nav button{
+padding:8px 15px;
+background:#0d6efd;
+color:#fff;
+border:none;
+border-radius:5px;
+cursor:pointer;
+}
+
+/* Hero */
+.hero{
+text-align:center;
+padding:60px 20px;
+}
+
+.hero h1{
+font-size:36px;
+margin-bottom:10px;
+}
+
+.hero p{
+color:#555;
+margin-bottom:20px;
+}
+
+.btn{
+display:inline-block;
+background:#28a745;
+color:#fff;
+padding:12px 25px;
+text-decoration:none;
+border-radius:6px;
+}
+
+/* Features */
+.features{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+padding:30px;
+}
+
+.card{
+background:#fff;
+padding:20px;
+border-radius:10px;
+text-align:center;
+box-shadow:0 2px 8px rgba(0,0,0,.1);
+}
+
+/* Footer */
+footer{
+background:#222;
+color:#fff;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>🛍️ RLS - Rup Labonno Style</h1>
+<p>Trusted Online Shopping in Bangladesh</p>
+</header>
+
+<!-- Navigation -->
+<nav>
+<a href="index.html">🏠 Home</a>
+<a href="products.html">🛒 Products</a>
+<a href="search.html">🔍 Search</a>
+<a href="about.html">ℹ️ About</a>
+<a href="contact.html">📞 Contact</a>
+
+<input type="text" id="searchInput" placeholder="Search products...">
+<button onclick="searchProduct()">Search</button>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+<h1>Welcome to RLS - Rup Labonno Style</h1>
+<p>Quality Products • Cash on Delivery • Trusted Service</p>
+
+<a href="products.html" class="btn">View Products</a>
+</section>
+
+<!-- Features -->
+<section class="features">
+
+<div class="card">
+<h2>🚚 Fast Delivery</h2>
+<p>Cash on Home Delivery all over Bangladesh.</p>
+</div>
+
+<div class="card">
+<h2>💯 Quality Products</h2>
+<p>Premium quality products at affordable prices.</p>
+</div>
+
+<div class="card">
+<h2>📞 Support</h2>
+<p>WhatsApp & Call Support Available.</p>
+</div>
+
+<div class="card">
+<h2>🔒 Secure Shopping</h2>
+<p>Safe & trusted online experience.</p>
+</div>
+
+<div class="card">
+<h2>⭐ Trusted Store</h2>
+<p>Happy customers all over Bangladesh.</p>
+</div>
+
+</section>
+
+<!-- Footer -->
+<footer>
+<p>© 2026 RLS - Rup Labonno Style</p>
+</footer>
+
+<script>
+function searchProduct(){
+let value = document.getElementById("searchInput").value.toLowerCase().trim();
+
+if(value === ""){
+alert("Please type something");
+return;
+}
+
+if(
+value.includes("dress") ||
+value.includes("shirt") ||
+value.includes("bag") ||
+value.includes("watch")
+){
+window.location.href = "products.html";
+}
+else{
+alert("Product not found");
+}
+}
+</script>
+
+</body>
+</html>>
